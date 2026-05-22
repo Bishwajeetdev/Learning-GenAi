@@ -22,6 +22,40 @@ body,html{
      border-radius: 15px;
     position: relative;
 }
+.MessageArea{
+  height: 60vh;
+  background-color: #c9b5b5;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+   &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.user{
+  display: flex;
+      background:#007bff;
+      color:white;
+      align-self:flex-end;
+      display: inline-block;
+      padding: 7px 15px;
+      border-radius: 10px;
+      margin: 10px 15px;
+    }
+
+    /* Bot message */
+    .bot{
+      display: flex;
+      background:#e5e5e5;
+      color:black;
+      align-self:flex-start;
+       margin: 10px 15px;
+      
+      
+      padding: 7px 15px;
+      border-radius: 10px;
+    }
+
 .input-fields{
    position: absolute;
    bottom: 0;
@@ -46,12 +80,14 @@ input {
   width: 100%;
   box-sizing: border-box;
   border: none;
+ 
 }
 
 input:focus {
   border-color: #474849;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
+
 
 button {
   padding: 8px 16px;
